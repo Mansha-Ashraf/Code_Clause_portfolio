@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --darkgreen: #006400;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .7rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--green);
+}
+
+
+body {
+    background: #e9e5e5;
+    padding-right: 5rem;
+}
+section{
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+
+
+/* header bar css */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 1000;
+}
+
+
+header .navbar {
+    writing-mode: vertical-lr;
+    padding: 2.5rem;
+}
+
+
+
+
+header .navbar a {
+    padding: 1rem;
+    font-size: 2rem;
+    color: rgba(30, 49, 217, 0.853);
+    font-weight: bold;
+}
+
+
+header .navbar a:hover {
+    color: #27ae60;
+}
+
+header.active{
+    left: 0%;
+}
+
+#menu-bars {
+    position: fixed;
+    z-index: 1000;
+    top: 2rem;
+    left: 2rem;
+    border-radius: .5rem;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+ 
+
+
+/* home css */
+.home{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+ .home .content{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+ }
+
+  .home .content h3{
+    font-size: 4rem;
+    color:#131010;
+    text-transform: uppercase;
+    
+ }
+
+ .home .content h3 span{
+    color: var(--darkgreen);
+    text-transform: uppercase;
+ }
+
+ .home .content p{
+    color: #222;
+    font-size: 2rem;
+    padding-bottom: 40px;
+ } 
+
+
+ 
+.social-media .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 25px;
+    background-color: var(--darkgreen);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0,0,.1);
+}
+
+
+.social-media .button:hover{
+    width: 200px;
+    
+}
+
+.social-media .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+}
+.social-media .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    
+}
+
+.social-media .button:hover{
+    color: white;
+    
+}
+.social-media .button span{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-left: 10px;
+    color: black;
+    display: inline-block;
+    
+}
+
+ .btn{
+    display: inline-block;
+    margin-top:20rem;
+    padding: .9rem 2rem ;
+    background: #671abfd7;
+    color: #eae8e3;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+ }
+
+
+ .heading span{
+    text-transform: uppercase;
+    color: var(--darkgreen);
+    
+ }
+.btn:hover{
+    background-color: var(--darkgreen);
+}
+
+
+
+/* about css */
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #782fcbd7;
+    
+}
+
+.heading span{
+    color: var(--darkgreen);
+    text-transform: uppercase;
+}
+
+
+
+.about .content{
+    
+    flex:1 1 55rem;
+}
+
+.about .content h3{
+    
+    color:#171817;
+    font-size: 3rem;
+}
+
+ol li{
+    font-size: 1.7rem;
+    padding: .5rem;
+    color: rgb(25, 17, 17);
+    text-decoration: none;
+    background-color: var(--darkgreen);
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    padding:10px 10px 10px 10px;
+    text-align:center;
+
+}
+.info{
+    font-size: 1.5rem;
+    
+}
+
+.about .content .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    gap:1.5rem;
+    padding: 1rem 0;
+}
+
+.about .content .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.about .content .box-container .box p{
+    font-size: 1.5rem;
+    color: #222;
+    padding: .5rem;
+}
+
+.about .content .box-container .box p span{
+    color: #006400;
+}
+.box .span{
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+
+
+
+
+/* service css */
+
+.services .box-container{
+
+
+    flex-wrap: wrap;
+    display: flex;
+    gap:1.5rem;
+    
+}
+
+.services .box-container .box{
+    flex: 1 1 30rem; 
+    margin: 2rem;
+    border-radius: .5rem;
+    background-color: rgba(156, 156, 126, 0.39);
+      padding: 2rem;  
+    box-shadow: 0 .5rem 1rem ggba(0,0,0,.1);
+    text-align: center;
+    
+} 
+
+
+.services .box-container .box i{
+    color: #006400;
+    font-size: 5rem;
+    padding: 1rem 0;
+}
+
+.services .box-container .box h3{
+    color: #222;
+    font-size: 2.5rem;
+    padding-top: 1rem ;
+}
+
+.services .box-container .box p{
+    color: #312727;
+    font-size: 1.7rem;
+    padding-top: 1rem 0 ;
+    line-height: 2;
+}
+
+
+
+.services  span{
+    color: var(--darkgreen);
+}
+
+/* contact section */
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+
+    width:100%;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.cpntact form textarea{
+    resize:none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor:pointer;
+}
+
+
+
+
+/* footer section */
+
+.footer{
+    padding:2.5rem;
+    font-size: 2rem;
+    color: black;
+    background-color: gray;
+    text-align: center;
+}
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding-right: 0;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    header {
+        width: 100%;
+        left:-120%;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    header .navbar {
+        writing-mode: horizontal-tb;
+    }
+
+    header .navbar a {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 20px;
+    }
+}
